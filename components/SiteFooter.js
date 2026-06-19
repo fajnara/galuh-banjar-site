@@ -13,9 +13,6 @@ export default function SiteFooter() {
         <a className="btn btn--gold" href={WA} target="_blank" rel="noopener">
           Konsultasi sekarang
         </a>
-        <p className="footer__sub">
-          WhatsApp 0811-5111-315 · Amuntai &amp; Banjarbaru
-        </p>
       </div>
 
       <div className="container footer__cols">
@@ -28,18 +25,6 @@ export default function SiteFooter() {
           <p className="footer__tag">
             Estetika yang ditemani dokter, untuk perempuan Banua.
           </p>
-          <ul className="footer__social" aria-label="Media sosial">
-            <li>
-              <a href={IG} target="_blank" rel="noopener">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href={TT} target="_blank" rel="noopener">
-                TikTok
-              </a>
-            </li>
-          </ul>
         </div>
 
         <nav className="footer__col" aria-label="Navigasi footer">
@@ -72,12 +57,20 @@ export default function SiteFooter() {
           <h3 className="footer__h">Kontak</h3>
           <ul className="footer__links">
             <li>
-              <a href={WA} target="_blank" rel="noopener">
-                WhatsApp 0811-5111-315
+              <a href={IG} target="_blank" rel="noopener">
+                Instagram
               </a>
             </li>
-            <li className="footer__links--plain">Senin–Sabtu 09.00–18.00</li>
-            <li className="footer__links--plain">Minggu 09.00–17.00</li>
+            <li>
+              <a href={TT} target="_blank" rel="noopener">
+                TikTok
+              </a>
+            </li>
+            <li>
+              <a href={WA} target="_blank" rel="noopener">
+                WhatsApp
+              </a>
+            </li>
           </ul>
         </div>
       </div>

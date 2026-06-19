@@ -961,7 +961,7 @@
   .footer {
     background: var(--maroon-900);
     color: var(--cream-100);
-    padding-top: var(--section-y);
+    padding-top: clamp(3.5rem, 7vw, 5.5rem);
   }
   .footer__cta {
     text-align: center;
