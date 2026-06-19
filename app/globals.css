@@ -514,6 +514,29 @@
   .hero__lede strong {
     color: var(--maroon-800);
   }
+  .hero__stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .stat strong {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--gold-400);
+    line-height: 1;
+  }
+  .stat span {
+    font-size: 0.75rem;
+    color: rgba(245, 236, 225, 0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
   .hero__actions {
     display: flex;
     flex-wrap: wrap;
@@ -710,16 +733,6 @@
     font-size: 0.96rem;
     line-height: 1.68;
     color: var(--ink-600);
-  }
-  .card__price {
-    font-size: 0.92rem;
-    color: var(--maroon-700);
-    border-top: 1px dashed var(--cream-200);
-    padding-top: 1rem;
-    margin: 1.4rem 0 0;
-  }
-  .card__price strong {
-    font-weight: 600;
   }
   .treat__foot {
     text-align: center;
@@ -925,6 +938,60 @@
     display: block;
   }
 
+  /* ============================ WHY US */
+  .why {
+    background: var(--cream-50);
+  }
+  .why__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .why__card {
+    background: #fff;
+    border: 1px solid var(--cream-200);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .why__icon {
+    font-size: 1.75rem;
+    line-height: 1;
+  }
+  .why__title {
+    font-size: 1.05rem;
+    color: var(--maroon-800);
+    font-weight: 600;
+    margin: 0;
+  }
+  .why__desc {
+    font-size: 0.9rem;
+    color: var(--ink-600);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ============================ BUTTON OUTLINE SMALL */
+  .btn--outline-sm {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.45rem 1rem;
+    border: 1.5px solid var(--maroon-700);
+    border-radius: 999px;
+    color: var(--maroon-700);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn--outline-sm:hover {
+    background: var(--maroon-700);
+    color: var(--cream-50);
+  }
+
   /* ============================ FOOTER */
   .footer {
     background: var(--maroon-900);
@@ -1058,6 +1125,9 @@
     .quotes {
       grid-template-columns: 1fr 1fr;
     }
+    .why__grid {
+      grid-template-columns: 1fr 1fr;
+    }
     .map-embed {
       min-height: 320px;
     }
@@ -1102,6 +1172,9 @@
       text-align: center;
     }
     .quotes {
+      grid-template-columns: 1fr;
+    }
+    .why__grid {
       grid-template-columns: 1fr;
     }
     .treat__grid {
