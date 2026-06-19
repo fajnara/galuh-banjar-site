@@ -74,10 +74,6 @@ export default function Treatments() {
           </a>{" "}
           — konsultasi sebelum memutuskan.
         </p>
-        <p className="treat__hint" data-reveal>
-          Harga di atas bersifat ilustrasi untuk pratinjau; harga final
-          disesuaikan klinik.
-        </p>
       </div>
     </section>
   );
