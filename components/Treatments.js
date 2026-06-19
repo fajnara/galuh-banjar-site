@@ -6,28 +6,24 @@ const treatments = [
     title: "Pencerahan & Whitening",
     for: "Untuk kulit kusam yang ingin lebih cerah.",
     desc: "Kapsul atau infus, dipilih sesuai kondisi kulit lewat konsultasi dulu.",
-    price: "Rp 250.000",
   },
   {
     no: "02",
     title: "Injeksi Vitamin Kulit",
     for: "Untuk kulit sehat & segar dari dalam.",
     desc: "Nutrisi terarah untuk kulit lembap dan berkilau. Diawasi langsung dokter.",
-    price: "Rp 200.000",
   },
   {
     no: "03",
     title: "Perawatan Jerawat",
     for: "Untuk jerawat & bekas yang membandel.",
     desc: "Bertahap sesuai tingkat jerawat — dari facial sampai rencana di rumah.",
-    price: "Rp 150.000",
   },
   {
     no: "04",
     title: "Peremajaan / Anti-Aging",
     for: "Untuk garis halus & kekencangan.",
     desc: "Program peremajaan yang disusun bersama dokter, sesuai usia dan targetmu.",
-    price: "Rp 350.000",
   },
 ];
 
@@ -59,9 +55,6 @@ export default function Treatments() {
               <h3 className="card__title">{t.title}</h3>
               <p className="card__for">{t.for}</p>
               <p className="card__desc">{t.desc}</p>
-              <p className="card__price">
-                Mulai <strong>{t.price}</strong>
-              </p>
             </article>
           ))}
         </div>
@@ -72,9 +65,6 @@ export default function Treatments() {
             Ceritakan dulu ke kami
           </a>
           .
-        </p>
-        <p className="treat__hint" data-reveal>
-          Harga ilustrasi; final menyesuaikan klinik.
         </p>
       </div>
     </section>

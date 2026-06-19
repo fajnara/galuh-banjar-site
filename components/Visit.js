@@ -24,6 +24,14 @@ export default function Visit() {
                 WhatsApp 0811-5111-315
               </a>
             </p>
+            <a
+              className="btn btn--outline-sm"
+              href="https://maps.google.com/maps?q=Jl+H+Saberan+Effendi+Palampitan+Hilir+Amuntai+Hulu+Sungai+Utara"
+              target="_blank"
+              rel="noopener"
+            >
+              Buka di Google Maps ↗
+            </a>
           </div>
 
           <div className="place" data-reveal>
@@ -34,6 +42,14 @@ export default function Visit() {
                 WhatsApp 0811-5111-315
               </a>
             </p>
+            <a
+              className="btn btn--outline-sm"
+              href="https://maps.google.com/maps?q=Jl+Kaca+Piring+No+07+Kel+Komet+Banjarbaru+Utara+Kalsel"
+              target="_blank"
+              rel="noopener"
+            >
+              Buka di Google Maps ↗
+            </a>
           </div>
 
           <p className="hours" data-reveal>
