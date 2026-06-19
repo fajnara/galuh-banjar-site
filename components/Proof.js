@@ -2,16 +2,19 @@ import BeforeAfter from "@/components/BeforeAfter";
 
 const quotes = [
   {
-    text: "“Awalnya cuma mau coba facial, tapi malah dijelaskan pelan-pelan soal kondisi kulitku. Sekarang sudah rutin dan beneran kelihatan bedanya.”",
-    cite: "Rina · Amuntai",
+    text: "Niat awal cuma facial, malah dijelasin pelan-pelan soal kulitku. Sekarang rutin, dan bedanya kelihatan.",
+    name: "Rina",
+    loc: "Amuntai",
   },
   {
-    text: "“Yang bikin nyaman, dokternya nggak langsung menyuruh treatment mahal. Dikasih tahu mana yang perlu duluan.”",
-    cite: "Maya · Banjarbaru",
+    text: "Dokternya nggak langsung nawarin yang mahal. Dijelasin mana yang perlu duluan.",
+    name: "Maya",
+    loc: "Banjarbaru",
   },
   {
-    text: "“Tempatnya bersih, adminnya ramah, dan hasilnya sesuai yang dijelaskan di awal. Recommended.”",
-    cite: "Sari · Amuntai",
+    text: "Tempatnya bersih, adminnya ramah, hasilnya sesuai yang dijanjikan.",
+    name: "Sari",
+    loc: "Amuntai",
   },
 ];
 
@@ -24,26 +27,36 @@ export default function Proof() {
             Bukti &amp; cerita
           </p>
           <h2 className="section__title" id="proof-title" data-reveal>
-            Hasil yang jujur, dari pasien yang nyata.
+            Bukan janji kami — cerita mereka.
           </h2>
           <p className="section__sub" data-reveal>
-            Geser pembanding untuk melihat perubahan sebelum dan sesudah
-            perawatan.
+            Geser untuk lihat sebelum &amp; sesudah.
           </p>
         </div>
 
-        {/* Before / After (drag). Panel = placeholder; ganti dengan foto asli (izin pasien). */}
         <BeforeAfter />
 
-        {/* Testimoni: CONTOH untuk pratinjau. Ganti dengan testimoni asli (izin pasien). */}
         <div className="quotes">
           {quotes.map((q) => (
-            <blockquote className="quote" data-reveal key={q.cite}>
+            <blockquote className="quote" data-reveal key={q.name + q.loc}>
               <p>{q.text}</p>
-              <cite>{q.cite}</cite>
+              <footer className="quote__by">
+                <span className="quote__avatar" aria-hidden="true">
+                  {q.name.charAt(0)}
+                </span>
+                <span className="quote__meta">
+                  <strong>{q.name}</strong>
+                  <small>{q.loc}</small>
+                </span>
+              </footer>
             </blockquote>
           ))}
         </div>
+
+        <p className="quotes__note" data-reveal>
+          Testimoni &amp; foto di atas masih contoh — akan diganti milik pasien,
+          atas izin.
+        </p>
       </div>
     </section>
   );

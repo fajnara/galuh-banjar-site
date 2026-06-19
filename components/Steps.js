@@ -2,22 +2,22 @@ const steps = [
   {
     no: "1",
     title: "Konsultasi",
-    desc: "Cerita keluhanmu. Dokter menilai kondisi kulit lebih dulu, gratis tekanan.",
+    desc: "Cerita keluhanmu. Dokter menilai kulitmu dulu, tanpa tekanan.",
   },
   {
     no: "2",
     title: "Rencana perawatan",
-    desc: "Kami susun langkah yang masuk akal untuk kulitmu — bukan paket yang dipaksakan.",
+    desc: "Langkah yang masuk akal untuk kulitmu — bukan paket dipaksakan.",
   },
   {
     no: "3",
     title: "Perawatan",
-    desc: "Dilakukan dan diawasi langsung oleh dokter, dengan alat & bahan yang terjaga.",
+    desc: "Dikerjakan & diawasi langsung dokter, dengan alat terjaga.",
   },
   {
     no: "4",
     title: "Pendampingan",
-    desc: "Kami temani perkembangan kulitmu, termasuk perawatan lanjutan di rumah.",
+    desc: "Kami temani perkembangannya, termasuk perawatan di rumah.",
   },
 ];
 

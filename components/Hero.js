@@ -44,9 +44,8 @@ export default function Hero() {
             </span>
           </h1>
           <p className="hero__lede" data-reveal>
-            <strong>dr.&nbsp;Amalia</strong> (Dipl.&nbsp;CIBTAC) menemani tiap
-            langkah — dari konsultasi pertama sampai kamu nyaman dengan kulitmu
-            sendiri. Untuk perempuan Banua.
+            Ditemani langsung <strong>dr.&nbsp;Amalia</strong> (Dipl.&nbsp;CIBTAC)
+            — dari konsultasi sampai kamu nyaman dengan kulitmu.
           </p>
           <div className="hero__actions" data-reveal>
             <a className="btn btn--gold" href={WA} target="_blank" rel="noopener">
@@ -58,11 +57,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      <a className="hero__scroll" href="#tentang" aria-label="Gulir ke bawah">
-        <span className="hero__scroll-dot" aria-hidden="true"></span>
-        <span>Telusuri</span>
-      </a>
     </section>
   );
 }

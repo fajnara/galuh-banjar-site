@@ -18,16 +18,14 @@ export default function About() {
             Sosok di balik klinik
           </p>
           <h2 className="section__title" id="about-title" data-reveal>
-            Di sini kamu tidak diserahkan ke alat. Kamu ditemani dr. Amalia
-            langsung.
+            Kamu ditemani dr. Amalia langsung — bukan diserahkan ke alat.
           </h2>
           <p data-reveal>
-            Buat dr. Amalia, kulit yang bagus bukan soal hasil kilat. Ia kenalan
-            dulu dengan kulitmu — baru menyarankan, bukan buru-buru menyuntik.
+            Buat dr. Amalia, kulit bagus bukan soal hasil kilat. Ia kenali
+            kulitmu dulu, baru menyarankan.
           </p>
           <p data-reveal>
-            Ia menyebut dirinya seorang <em>FaceDesigner</em> — karena tiap
-            wajah punya cerita, struktur, dan kebutuhan yang berbeda. Tidak ada
+            Ia menyebut diri <em>FaceDesigner</em>: tiap wajah beda, jadi tak ada
             satu resep untuk semua.
           </p>
 

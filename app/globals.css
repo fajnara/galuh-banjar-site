@@ -1245,3 +1245,141 @@
     }
   }
 }
+
+@layer components {
+  /* ===== VISIT — map sejajar tengah dengan teks ===== */
+  .visit__grid {
+    align-items: center;
+  }
+
+  /* ===== PROOF — penulis testimoni + tanda kutip ===== */
+  .quote {
+    position: relative;
+  }
+  .quote::before {
+    content: "\201C";
+    position: absolute;
+    top: 0.6rem;
+    right: 1.2rem;
+    font-family: var(--serif);
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--gold-500);
+    opacity: 0.45;
+    pointer-events: none;
+  }
+  .quote__by {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.3rem;
+  }
+  .quote__avatar {
+    flex: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: rgba(191, 155, 90, 0.18);
+    color: var(--gold-400);
+    font-family: var(--serif);
+    font-size: 1.05rem;
+  }
+  .quote__meta {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+  .quote__meta strong {
+    color: var(--cream-50);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  .quote__meta small {
+    color: var(--gold-400);
+    font-size: 0.8rem;
+  }
+  .quotes__note {
+    text-align: center;
+    margin-top: 2.6rem;
+    font-size: 0.82rem;
+    color: rgba(245, 236, 225, 0.5);
+  }
+
+  /* ===== FOOTER — berkolom ===== */
+  .footer__cta {
+    padding-bottom: clamp(3rem, 6vw, 4.5rem);
+  }
+  .footer__cols {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1.1fr 1.2fr;
+    gap: 2.5rem;
+    padding-block: 3.5rem;
+    border-bottom: 1px solid rgba(191, 155, 90, 0.18);
+  }
+  .footer__col--brand {
+    max-width: 32ch;
+  }
+  .footer__col--brand .brand--footer {
+    display: inline-flex;
+  }
+  .footer__tag {
+    color: rgba(245, 236, 225, 0.6);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 1rem 0 1.3rem;
+  }
+  .footer__h {
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-400);
+    font-weight: 600;
+    margin: 0 0 1.1rem;
+  }
+  .footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.7rem;
+  }
+  .footer__links a {
+    color: rgba(245, 236, 225, 0.78);
+    font-size: 0.95rem;
+    transition: color 0.2s var(--ease);
+  }
+  .footer__links a:hover {
+    color: var(--cream-50);
+  }
+  .footer__links--plain {
+    color: rgba(245, 236, 225, 0.7);
+    font-size: 0.95rem;
+  }
+  .footer__meta {
+    text-align: left;
+  }
+  .footer__note {
+    font-size: 0.8rem;
+    color: rgba(245, 236, 225, 0.4);
+    margin: 0;
+  }
+
+  @media (max-width: 920px) {
+    .footer__cols {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem 1.5rem;
+    }
+    .footer__col--brand {
+      grid-column: 1 / -1;
+      max-width: 42ch;
+    }
+  }
+  @media (max-width: 560px) {
+    .footer__cols {
+      grid-template-columns: 1fr;
+    }
+  }
+}
