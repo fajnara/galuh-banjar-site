@@ -18,12 +18,12 @@ export default function About() {
             Sosok di balik klinik
           </p>
           <h2 className="section__title" id="about-title" data-reveal>
-            Bukan sekadar klinik — ada dokter yang benar-benar mendampingi.
+            Di sini kamu tidak diserahkan ke alat. Kamu ditemani dr. Amalia
+            langsung.
           </h2>
           <p data-reveal>
-            Galuh Banjar lahir dari satu keyakinan dr. Amalia: perawatan estetik
-            yang baik bukan soal hasil instan, melainkan tentang memahami kulit
-            setiap pasien dan merawatnya dengan telaten.
+            Buat dr. Amalia, kulit yang bagus bukan soal hasil kilat. Ia kenalan
+            dulu dengan kulitmu — baru menyarankan, bukan buru-buru menyuntik.
           </p>
           <p data-reveal>
             Ia menyebut dirinya seorang <em>FaceDesigner</em> — karena tiap
