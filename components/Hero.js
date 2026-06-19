@@ -48,9 +48,23 @@ export default function Hero() {
             langkah — dari konsultasi pertama sampai kamu nyaman dengan kulitmu
             sendiri. Untuk perempuan Banua.
           </p>
+          <div className="hero__stats" data-reveal>
+            <div className="stat">
+              <strong>1.000+</strong>
+              <span>Pasien ditangani</span>
+            </div>
+            <div className="stat">
+              <strong>2</strong>
+              <span>Cabang aktif</span>
+            </div>
+            <div className="stat">
+              <strong>CIBTAC</strong>
+              <span>Dokter bersertifikasi</span>
+            </div>
+          </div>
           <div className="hero__actions" data-reveal>
             <a className="btn btn--gold" href={WA} target="_blank" rel="noopener">
-              Konsultasi via WhatsApp
+              Konsultasi Awal via WhatsApp
             </a>
             <a className="btn btn--text" href="#perawatan">
               Lihat perawatan <span aria-hidden="true">↓</span>
