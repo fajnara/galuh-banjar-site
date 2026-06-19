@@ -269,6 +269,25 @@
   .portrait--arch .ph__monogram {
     top: 2.6rem;
   }
+  /* real photos overlaid on .ph / .ba containers (replace placeholders) */
+  .ph.has-photo {
+    border: none;
+    overflow: hidden;
+  }
+  .ph__photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  /* 'before' strip clips its full-frame photo so framing matches 'after' */
+  .ba__img--before {
+    overflow: hidden;
+  }
+
   /* before / after tags */
   .ph__tag {
     position: absolute;

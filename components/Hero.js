@@ -62,19 +62,13 @@ export default function Hero() {
 
         <div className="hero__media" data-parallax>
           <figure className="portrait portrait--arch">
-            <div
-              className="ph ph--portrait"
-              role="img"
-              aria-label="Potret dr. Amalia"
-            >
-              <span className="ph__monogram" aria-hidden="true">
-                GB
-              </span>
-              <span className="ph__label">
-                Potret dr.&nbsp;Amalia
-                <br />
-                <em>area foto</em>
-              </span>
+            <div className="ph ph--portrait has-photo">
+              <img
+                className="ph__photo"
+                src="/dr-amalia.jpg"
+                alt="Potret dr. Amalia"
+                fetchPriority="high"
+              />
             </div>
             <figcaption className="portrait__cap">
               dr. Amalia A, M.Kes, M.Biomed (AAM), Dipl. CIBTAC

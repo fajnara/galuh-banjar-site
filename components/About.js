@@ -3,19 +3,13 @@ export default function About() {
     <section className="about section" id="tentang" aria-labelledby="about-title">
       <div className="container about__grid">
         <div className="about__media" data-reveal>
-          <div
-            className="ph ph--tall"
-            role="img"
-            aria-label="Suasana klinik &amp; perawatan"
-          >
-            <span className="ph__monogram" aria-hidden="true">
-              GB
-            </span>
-            <span className="ph__label">
-              Suasana klinik &amp; perawatan
-              <br />
-              <em>area foto</em>
-            </span>
+          <div className="ph ph--tall has-photo">
+            <img
+              className="ph__photo"
+              src="/treatment.jpg"
+              alt="Suasana klinik dan perawatan"
+              loading="lazy"
+            />
           </div>
         </div>
 

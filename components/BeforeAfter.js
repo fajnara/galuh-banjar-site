@@ -65,6 +65,7 @@ export default function BeforeAfter() {
           role="img"
           aria-label="Foto sesudah perawatan"
         >
+          <img className="ph__photo" src="/after.jpg" alt="" draggable="false" />
           <span className="ph__tag">Sesudah</span>
         </div>
         <div
@@ -74,6 +75,13 @@ export default function BeforeAfter() {
           aria-label="Foto sebelum perawatan"
           style={{ width: `${pos}%` }}
         >
+          <img
+            className="ph__photo"
+            src="/before.jpg"
+            alt=""
+            draggable="false"
+            style={{ width: `${pos > 0 ? 10000 / pos : 100000}%` }}
+          />
           <span className="ph__tag ph__tag--before">Sebelum</span>
         </div>
         <button

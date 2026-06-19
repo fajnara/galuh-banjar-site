@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       className={`no-js ${fraunces.variable} ${jost.variable}`}
       suppressHydrationWarning
     >
-      <body>
+      <body suppressHydrationWarning>
         {/* swap to JS-enhanced styles only when JS available
             (content stays visible if JS fails) */}
         <script
