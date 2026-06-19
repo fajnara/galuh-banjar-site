@@ -22,6 +22,14 @@ export default function SiteFooter() {
             Galuh Banjar<small>Aesthetic Klinik</small>
           </span>
         </div>
+        <nav className="footer__nav" aria-label="Navigasi footer">
+          <ul>
+            <li><a href="#tentang">Dokter</a></li>
+            <li><a href="#perawatan">Perawatan</a></li>
+            <li><a href="#bukti">Hasil &amp; Testimoni</a></li>
+            <li><a href="#kunjungi">Kunjungi Kami</a></li>
+          </ul>
+        </nav>
         <ul className="footer__social" aria-label="Media sosial">
           <li>
             <a
@@ -45,11 +53,6 @@ export default function SiteFooter() {
         <p className="footer__meta">
           © {year} Galuh Banjar Aesthetic Klinik · Amuntai &amp; Banjarbaru,
           Kalsel.
-          <br />
-          <small>
-            Pratinjau desain · foto, harga &amp; testimoni masih contoh, akan
-            diganti dengan milik klinik.
-          </small>
         </p>
       </div>
     </footer>
