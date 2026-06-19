@@ -43,10 +43,6 @@ export default function Hero() {
               .
             </span>
           </h1>
-          <p className="hero__lede" data-reveal>
-            Ditemani langsung <strong>dr.&nbsp;Amalia</strong> (Dipl.&nbsp;CIBTAC)
-            — dari konsultasi sampai kamu nyaman dengan kulitmu.
-          </p>
           <div className="hero__stats" data-reveal>
             <div className="stat">
               <strong>1.000+</strong>

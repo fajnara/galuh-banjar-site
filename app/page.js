@@ -4,7 +4,6 @@ import About from "@/components/About";
 import Treatments from "@/components/Treatments";
 import Proof from "@/components/Proof";
 import Steps from "@/components/Steps";
-import WhyUs from "@/components/WhyUs";
 import Visit from "@/components/Visit";
 import SiteFooter from "@/components/SiteFooter";
 import Motion from "@/components/Motion";
@@ -24,7 +23,6 @@ export default function Home() {
         <Treatments />
         <Proof />
         <Steps />
-        <WhyUs />
         <Visit />
         <SiteFooter />
       </main>

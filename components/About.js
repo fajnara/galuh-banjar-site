@@ -43,12 +43,6 @@ export default function About() {
               <small>Pendekatan personal per wajah</small>
             </li>
           </ul>
-
-          <blockquote className="pullquote" data-reveal>
-            “Kami tidak memulai dari treatment — kami memulai dari
-            mendengarkan.”
-            <cite>Filosofi Galuh Banjar</cite>
-          </blockquote>
         </div>
       </div>
     </section>

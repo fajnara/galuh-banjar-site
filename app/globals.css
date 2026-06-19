@@ -939,42 +939,6 @@
     display: block;
   }
 
-  /* ============================ WHY US */
-  .why {
-    background: var(--cream-50);
-  }
-  .why__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 3rem;
-  }
-  .why__card {
-    background: #fff;
-    border: 1px solid var(--cream-200);
-    border-radius: var(--radius);
-    padding: 1.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-  .why__icon {
-    font-size: 1.75rem;
-    line-height: 1;
-  }
-  .why__title {
-    font-size: 1.05rem;
-    color: var(--maroon-800);
-    font-weight: 600;
-    margin: 0;
-  }
-  .why__desc {
-    font-size: 0.9rem;
-    color: var(--ink-600);
-    line-height: 1.65;
-    margin: 0;
-  }
-
   /* ============================ BUTTON OUTLINE SMALL */
   .btn--outline-sm {
     display: inline-block;
@@ -1126,9 +1090,6 @@
     .quotes {
       grid-template-columns: 1fr 1fr;
     }
-    .why__grid {
-      grid-template-columns: 1fr 1fr;
-    }
     .map-embed {
       min-height: 320px;
     }
@@ -1173,9 +1134,6 @@
       text-align: center;
     }
     .quotes {
-      grid-template-columns: 1fr;
-    }
-    .why__grid {
       grid-template-columns: 1fr;
     }
     .treat__grid {
