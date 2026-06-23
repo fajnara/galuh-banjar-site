@@ -1,4 +1,5 @@
-const WA = "https://wa.me/628115111315";
+import { wa } from "@/lib/wa";
+
 const IG = "https://instagram.com/galuhbanjarklinik_amuntai";
 const TT = "https://tiktok.com/@galuhbanjarklinik";
 
@@ -10,7 +11,12 @@ export default function SiteFooter() {
       <div className="container footer__cta" data-reveal>
         <p className="eyebrow eyebrow--light">Siap merawat kulitmu?</p>
         <h2 className="footer__title">Mulai dari satu pesan ke dr. Amalia.</h2>
-        <a className="btn btn--gold" href={WA} target="_blank" rel="noopener">
+        <a
+          className="btn btn--gold"
+          href={wa("Halo Galuh Banjar, saya mau konsultasi.")}
+          target="_blank"
+          rel="noopener"
+        >
           Konsultasi sekarang
         </a>
       </div>
@@ -67,7 +73,7 @@ export default function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href={WA} target="_blank" rel="noopener">
+              <a href={wa()} target="_blank" rel="noopener">
                 WhatsApp
               </a>
             </li>

@@ -1,4 +1,4 @@
-const WA = "https://wa.me/628115111315";
+import { wa } from "@/lib/wa";
 
 const treatments = [
   {
@@ -61,7 +61,13 @@ export default function Treatments() {
 
         <p className="treat__foot" data-reveal>
           Punya keluhan lain?{" "}
-          <a href={WA} target="_blank" rel="noopener">
+          <a
+            href={wa(
+              "Halo Galuh Banjar, saya punya keluhan kulit dan ingin cerita dulu."
+            )}
+            target="_blank"
+            rel="noopener"
+          >
             Ceritakan dulu ke kami
           </a>
           .

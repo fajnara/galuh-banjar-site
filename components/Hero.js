@@ -1,4 +1,4 @@
-const WA = "https://wa.me/628115111315";
+import { wa } from "@/lib/wa";
 
 export default function Hero() {
   return (
@@ -58,7 +58,12 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero__actions" data-reveal>
-            <a className="btn btn--gold" href={WA} target="_blank" rel="noopener">
+            <a
+              className="btn btn--gold"
+              href={wa("Halo Galuh Banjar, saya mau konsultasi awal.")}
+              target="_blank"
+              rel="noopener"
+            >
               Konsultasi Awal via WhatsApp
             </a>
             <a className="btn btn--text" href="#perawatan">

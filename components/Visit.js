@@ -1,4 +1,4 @@
-const WA = "https://wa.me/628115111315";
+import { wa } from "@/lib/wa";
 
 export default function Visit() {
   return (
@@ -20,7 +20,13 @@ export default function Visit() {
               Amuntai, Hulu Sungai Utara, Kalsel.
             </p>
             <p className="place__wa">
-              <a href={WA} target="_blank" rel="noopener">
+              <a
+                href={wa(
+                  "Halo Galuh Banjar Amuntai, saya mau tanya jadwal & janji temu."
+                )}
+                target="_blank"
+                rel="noopener"
+              >
                 WhatsApp 0811-5111-315
               </a>
             </p>
@@ -38,7 +44,13 @@ export default function Visit() {
             <h3>Banjarbaru</h3>
             <p>Jl. Kaca Piring No. 07, Kel. Komet, Banjarbaru Utara, Kalsel.</p>
             <p className="place__wa">
-              <a href={WA} target="_blank" rel="noopener">
+              <a
+                href={wa(
+                  "Halo Galuh Banjar Banjarbaru, saya mau tanya jadwal & janji temu."
+                )}
+                target="_blank"
+                rel="noopener"
+              >
                 WhatsApp 0811-5111-315
               </a>
             </p>

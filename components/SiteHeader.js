@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const WA = "https://wa.me/628115111315";
+import { wa } from "@/lib/wa";
 
 export default function SiteHeader() {
   const [stuck, setStuck] = useState(false);
@@ -78,7 +78,7 @@ export default function SiteHeader() {
             <li>
               <a
                 className="btn btn--ghost nav__cta"
-                href={WA}
+                href={wa("Halo Galuh Banjar, saya mau konsultasi.")}
                 target="_blank"
                 rel="noopener"
               >
