@@ -1331,13 +1331,25 @@
     .hero__inner {
       max-width: 100%;
     }
+    /* geser foto ke kanan-atas: wajah model sedikit terlihat, sementara teks di
+       kiri tetap berada di atas area latar yang lebih gelap */
+    .hero__img {
+      object-position: 82% 22%;
+    }
     .hero__scrim {
       background: linear-gradient(
         180deg,
-        rgba(42, 24, 29, 0.74) 0%,
-        rgba(42, 24, 29, 0.5) 45%,
-        rgba(42, 24, 29, 0.88) 100%
+        rgba(42, 24, 29, 0.52) 0%,
+        rgba(42, 24, 29, 0.4) 40%,
+        rgba(42, 24, 29, 0.82) 100%
       );
+    }
+    /* halo gelap tipis di sekitar huruf → teks kebaca tanpa menggelapkan model */
+    .hero--full .eyebrow,
+    .hero--full .hero__title,
+    .hero--full .hero__stats {
+      text-shadow: 0 1px 16px rgba(42, 24, 29, 0.6),
+        0 1px 4px rgba(42, 24, 29, 0.55);
     }
   }
 }
