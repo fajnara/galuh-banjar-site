@@ -14,6 +14,18 @@ export default function BeforeAfter({ cases = FALLBACK }) {
 
   const current = list[active] || list[0];
 
+  // Preload semua foto kasus saat mount → ganti kasus tanpa jeda download.
+  useEffect(() => {
+    list.forEach((c) => {
+      [c.before, c.after].forEach((src) => {
+        if (src) {
+          const img = new Image();
+          img.src = src;
+        }
+      });
+    });
+  }, [list]);
+
   const applyFromClientX = (clientX) => {
     const frame = frameRef.current;
     if (!frame) return;
