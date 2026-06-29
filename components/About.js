@@ -6,8 +6,8 @@ export default function About() {
           <div className="ph ph--tall has-photo">
             <img
               className="ph__photo"
-              src="/treatment.jpg"
-              alt="Suasana klinik dan perawatan"
+              src="/dr-amalia.webp"
+              alt="dr. Amalia, dokter di Galuh Banjar Aesthetic Klinik"
               loading="lazy"
             />
           </div>

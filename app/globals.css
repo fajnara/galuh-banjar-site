@@ -825,6 +825,49 @@
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
   }
 
+  /* caption + pemilih kasus (thumbnail) untuk galeri before/after */
+  .ba__caption {
+    text-align: center;
+    margin: 1rem 0 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: rgba(245, 236, 225, 0.78);
+  }
+  .ba__thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+  }
+  .ba__thumb {
+    width: 84px;
+    height: 56px;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    opacity: 0.65;
+    transition: opacity 0.2s var(--ease), border-color 0.2s var(--ease),
+      transform 0.2s var(--ease);
+  }
+  .ba__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .ba__thumb:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  .ba__thumb.is-active {
+    opacity: 1;
+    border-color: var(--gold-500);
+  }
+
   .quotes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

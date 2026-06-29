@@ -86,7 +86,6 @@ export default function SiteFooter() {
           © {year} Galuh Banjar Aesthetic Klinik · Amuntai &amp; Banjarbaru,
           Kalsel.
         </p>
-        <p className="footer__note">Pratinjau desain.</p>
       </div>
     </footer>
   );

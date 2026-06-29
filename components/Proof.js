@@ -18,6 +18,13 @@ const quotes = [
   },
 ];
 
+// Kasus before/after. Label boleh diganti sesuai perawatan tiap foto.
+const cases = [
+  { before: "/before.webp", after: "/after.webp", label: "Perawatan jerawat" },
+  { before: "/before2.webp", after: "/after2.webp", label: "Pencerahan kulit" },
+  { before: "/before3.webp", after: "/after3.webp", label: "Peremajaan" },
+];
+
 export default function Proof() {
   return (
     <section className="proof section" id="bukti" aria-labelledby="proof-title">
@@ -30,11 +37,11 @@ export default function Proof() {
             Bukan janji kami — cerita mereka.
           </h2>
           <p className="section__sub" data-reveal>
-            Geser untuk lihat sebelum &amp; sesudah.
+            Geser tiap foto; pilih kasus lain di bawah.
           </p>
         </div>
 
-        <BeforeAfter />
+        <BeforeAfter cases={cases} />
 
         <div className="quotes">
           {quotes.map((q) => (
@@ -53,10 +60,10 @@ export default function Proof() {
           ))}
         </div>
 
-        <p className="quotes__note" data-reveal>
+        {/* <p className="quotes__note" data-reveal>
           Testimoni &amp; foto di atas masih contoh — akan diganti milik pasien,
           atas izin.
-        </p>
+        </p> */}
       </div>
     </section>
   );

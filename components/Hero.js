@@ -8,7 +8,7 @@ export default function Hero() {
       aria-labelledby="hero-title"
     >
       <div className="hero__bg" aria-hidden="true">
-        <img className="hero__img" src="/hero.jpg" alt="" fetchPriority="high" />
+        <img className="hero__img" src="/hero.webp" alt="" fetchPriority="high" />
         <span className="hero__scrim"></span>
       </div>
 

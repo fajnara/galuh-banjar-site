@@ -2,11 +2,17 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// Interactive before/after comparison (drag / click / keyboard).
-export default function BeforeAfter() {
+const FALLBACK = [{ before: "/before.webp", after: "/after.webp", label: "" }];
+
+// Before/after interaktif (drag / klik / keyboard) + pemilih kasus via thumbnail.
+export default function BeforeAfter({ cases = FALLBACK }) {
+  const list = cases && cases.length ? cases : FALLBACK;
   const frameRef = useRef(null);
   const draggingRef = useRef(false);
+  const [active, setActive] = useState(0);
   const [pos, setPos] = useState(50);
+
+  const current = list[active] || list[0];
 
   const applyFromClientX = (clientX) => {
     const frame = frameRef.current;
@@ -39,7 +45,6 @@ export default function BeforeAfter() {
   }, []);
 
   const onFrameClick = (e) => {
-    // ignore clicks on the handle itself
     if (e.target.closest(".ba__handle")) return;
     applyFromClientX(e.clientX);
   };
@@ -57,6 +62,11 @@ export default function BeforeAfter() {
     draggingRef.current = true;
   };
 
+  const selectCase = (i) => {
+    setActive(i);
+    setPos(50);
+  };
+
   return (
     <div className="ba" data-reveal>
       <div className="ba__frame" id="ba" ref={frameRef} onClick={onFrameClick}>
@@ -67,8 +77,8 @@ export default function BeforeAfter() {
         >
           <img
             className="ph__photo"
-            src="/after.jpg"
-            alt="Kulit pasien sesudah perawatan di Galuh Banjar"
+            src={current.after}
+            alt={`Kulit sesudah perawatan${current.label ? ` — ${current.label}` : ""}`}
             draggable="false"
           />
           <span className="ph__tag">Sesudah</span>
@@ -82,8 +92,8 @@ export default function BeforeAfter() {
         >
           <img
             className="ph__photo"
-            src="/before.jpg"
-            alt="Kulit pasien sebelum perawatan"
+            src={current.before}
+            alt={`Kulit sebelum perawatan${current.label ? ` — ${current.label}` : ""}`}
             draggable="false"
             style={{ width: `${pos > 0 ? 10000 / pos : 100000}%` }}
           />
@@ -106,6 +116,25 @@ export default function BeforeAfter() {
           <span aria-hidden="true">‹ ›</span>
         </button>
       </div>
+
+      {current.label ? <p className="ba__caption">{current.label}</p> : null}
+
+      {list.length > 1 ? (
+        <div className="ba__thumbs" aria-label="Pilih kasus before/after">
+          {list.map((c, i) => (
+            <button
+              key={(c.label || "kasus") + i}
+              type="button"
+              className={`ba__thumb${i === active ? " is-active" : ""}`}
+              aria-pressed={i === active}
+              aria-label={`Lihat kasus: ${c.label || `kasus ${i + 1}`}`}
+              onClick={() => selectCase(i)}
+            >
+              <img src={c.after} alt="" draggable="false" />
+            </button>
+          ))}
+        </div>
+      ) : null}
     </div>
   );
 }
